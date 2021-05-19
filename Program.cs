@@ -31,7 +31,7 @@ namespace LinkedListExample
                      new XElement("ItemValue", fields[10]),
                      new XElement("ItemWeight", fields[11]),
                      new XElement("ItemDesc", fields[12]),
-                     new XElement("ItemCurrency", fields[13]==""?"GBR":fields[13])
+                     new XElement("ItemCurrency", fields[13]==""? "GBP" : fields[13])
                     
                    )
                 );
