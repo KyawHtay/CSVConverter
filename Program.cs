@@ -44,9 +44,6 @@ namespace LinkedListExample
                        tot = gr.Sum(q => (decimal?)q.Element("ItemValue")* (decimal?)q.Element("ItemQuantity"))
                    });
 
-
-
-            XmlDocument result = new XmlDocument(); 
             foreach (var k in groups)
             {
                 doc.Root.Descendants("Order").FirstOrDefault(x => (string?)x.Element("OrderNo") == k.key)
